@@ -19,7 +19,7 @@ if [ -f "$FILE" ]; then
   wget https://github.com/YuzukiHD/TinaAddons/releases/download/1.0/arm-toolchains.tar.gz
   tar xf arm-toolchains.tar.gz
 
-  echo -e "\n**********************************\nDone, Start Tina Linux\n**********************************\n"
+  echo -e "\n**********************************\nDone, Start Your Tina Linux\n**********************************\n"
   rm -rf 0001-add-t113-platform-to-d1-h-sdk.patch
   rm -rf arm-toolchains.tar.gz
   rm -rf apply_patch.sh
