@@ -9,6 +9,7 @@ echo -e "\n**********************************\nApply T113 Patch...\n************
 
 FILE=$SOURCE_PATH/rules.mk
 if [ -f "$FILE" ]; then
+  rm -rf .gitignore
   git apply 0001-add-t113-platform-to-d1-h-sdk.patch
   echo -e "\n**********************************\nFix Patch Error...\n**********************************\n"
 
