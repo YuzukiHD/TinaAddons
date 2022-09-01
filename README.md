@@ -1,5 +1,5 @@
 # TinaAddons
-Add T113 Chip to Allwinner Official D1-H Tina SDK
+Add T113 Chip to Official Allwinner D1-H Tina SDK
 
 ## Get Started.
 
