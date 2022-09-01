@@ -23,6 +23,8 @@ if [ -f "$FILE" ]; then
   rm -rf 0001-add-t113-platform-to-d1-h-sdk.patch
   rm -rf arm-toolchains.tar.gz
   rm -rf apply_patch.sh
+  rm -rf TinaAddons
+  
 else
   echo -e "ERROR: NOT THE ROOT OF TINA LINUX!"
 fi
