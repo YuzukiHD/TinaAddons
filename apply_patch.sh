@@ -14,7 +14,8 @@ rm -rf $SOURCE_PATH/lichee/brandy-2.0/spl/include/openssl/assert.h
 echo -e "// Copyright 2010 Google Inc. All Rights Reserved." > $SOURCE_PATH/lichee/brandy-2.0/spl/include/openssl/assert.h
 
 echo -e "\n**********************************\nAdd Toolchains...\n**********************************\n"
-tar xf t113-toolchains.tar.gz
+wget https://github.com/YuzukiHD/TinaAddons/releases/download/1.0/arm-toolchains.tar.gz
+tar xf arm-toolchains.tar.gz
 
 echo -e "\n**********************************\nStart Tina Linux\n**********************************\n"
 source build/envsetup.sh 
