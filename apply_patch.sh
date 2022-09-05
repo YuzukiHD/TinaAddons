@@ -11,10 +11,12 @@ FILE=$SOURCE_PATH/rules.mk
 if [ -f "$FILE" ]; then
   rm -rf .gitignore
   git apply 0001-add-t113-platform-to-d1-h-sdk.patch
-  echo -e "\n**********************************\nFix Patch Error...\n**********************************\n"
+  echo -e "\n**********************************\nFixing Patch...\n**********************************\n"
 
   rm -rf $SOURCE_PATH/lichee/brandy-2.0/spl/include/openssl/assert.h
   echo -e "// Copyright 2010 Google Inc. All Rights Reserved." > $SOURCE_PATH/lichee/brandy-2.0/spl/include/openssl/assert.h
+  
+  echo -e "\n**********************************\nFixing Patch Done.\n**********************************\n"
 
   echo -e "\n**********************************\nAdd Toolchains...\n**********************************\n"
   wget https://github.com/YuzukiHD/TinaAddons/releases/download/1.0/arm-toolchains.tar.gz
@@ -25,6 +27,7 @@ if [ -f "$FILE" ]; then
   rm -rf arm-toolchains.tar.gz
   rm -rf apply_patch.sh
   rm -rf TinaAddons
+  rm -rf README.md
 
 else
   echo -e "ERROR: NOT THE ROOT OF TINA LINUX!"
